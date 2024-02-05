@@ -1,0 +1,11 @@
+sort1 uses: Bubble Sort
+
+How do you know?: The running time of sorting random.txt is much larger than sorted.txt
+
+sort2 uses: Merge Sort
+
+How do you know?: The running time of sorting random.txt is similar to sorted.txt, and it is the relatively short when sort random.txt compared with other two programs.
+
+sort3 uses: Selection Sort
+
+How do you know?: The running time of sorting random.txt is similar to sorted.txt, and it has higher running time than sort2 when sort random.txt

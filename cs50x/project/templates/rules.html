@@ -1,0 +1,281 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Rules
+{% endblock %}
+
+{% block body %}
+	<section id="rules" class="section clearfix no-view secPadding text-center" data-animation-effect="fadeIn"> 
+		<div class="space"></div> 
+
+		<div class="container">
+			<div class="col-md-12">
+
+				<div class="row">
+					<h3>Amateur Boxing</h3>
+					<hr>
+
+					<div>
+						<h4>Amateur Boxing Weight Class<sup><a href="#rules-reference">&#91;1&#93;</a></sup></h4>
+
+						<table>
+							<thead>
+								<th>Class Name</th>
+								<th>Men Weight (kg)</th>
+								<th>Women Weight (kg) </th>
+								<th>Juniors Weight (kg) </th>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Super heavyweight</td>
+									<td>&gt; 91</td>
+									<td>-</td>
+									<td>-</td>
+								</tr>
+								<tr>
+									<td>Heavyweight</td>
+									<td>81-91</td>
+									<td>&gt; 81</td>
+									<td>&gt; 80</td>
+								</tr>
+								<tr>
+									<td>Light heavyweight</td>
+									<td>75-81</td>
+									<td>75-81</td>
+									<td>75-80</td>
+								</tr>
+								<tr>
+									<td>Middleweight</td>
+									<td>69-75</td>
+									<td>69-75</td>
+									<td>70-75</td>
+								</tr>
+								<tr>
+									<td>Light Middleweight</td>
+									<td>-</td>
+									<td>-</td>
+									<td>66-70</td>
+								</tr>
+								<tr>
+									<td>Welterweight</td>
+									<td>64-69</td>
+									<td>64-69</td>
+									<td>63-66</td>
+								</tr>
+								<tr>
+									<td>Light welterweight</td>
+									<td>60-64</td>
+									<td>60-64</td>
+									<td>60-63</td>
+								</tr>
+								<tr>
+									<td>Lightweight</td>
+									<td>56–60</td>
+									<td>57–60</td>
+									<td>57–60</td>
+								</tr>
+								<tr>
+									<td>Featherweight</td>
+									<td>-</td>
+									<td>54–57</td>
+									<td>54–57</td>
+								</tr>
+								<tr>
+									<td>Bantamweight</td>
+									<td>52–56</td>
+									<td>51–54</td>
+									<td>52–56</td>
+								</tr>
+								<tr>
+									<td>Light bantamweight</td>
+									<td>-</td>
+									<td>-</td>
+									<td>50–52</td>
+								</tr>
+								<tr>
+									<td>Flyweight</td>
+									<td>49–52</td>
+									<td>48–51</td>
+									<td>48–50</td>
+								</tr>
+								<tr>
+									<td>Light flyweight</td>
+									<td>46–49</td>
+									<td>45-48</td>
+									<td>46-48</td>
+								</tr>
+								<tr>
+									<td>Pinweight</td>
+									<td>-</td>
+									<td>-</td>
+									<td>44–46</td>
+								</tr>
+							</tbody>
+						</table>
+
+					</div>
+					<br>
+					<div>
+						<h4>Conpetition Rules</h4>
+						<p>Less than 64kg (&lt; 141lbs) - 10oz gloves</p>
+						<p>64kg and above (&gt;= 141lbs) - 12oz gloves</p>
+						<p>3 rounds of three minutes in men, 4 rounds of two minutes in women. And a 1-minute interval between rounds.</p>
+						<br>
+						<p>Read more on England Boxing: <a href="https://www.englandboxing.org/wp-content/uploads/2019/05/England-Boxing-Rule-Book-2019.pdf">England Boxing Rule Book - 2019 Edition</a></p>
+					</div>
+
+				</div>
+				
+				<div class="space"></div>
+
+				<div class="row">
+					<h3>Professional Boxing</h3>
+					<hr>
+
+					<div>
+						<h4>Pro Boxing Weigh Class<sup><a href="#rules-reference">&#91;2&#93;</a></sup></h4>
+
+						<table>
+							<thead>
+								<th>Division/Class</th>
+								<th>Stone</th>
+								<th>kg</th>
+								<th>Pounds</th>
+							</thead>
+							<tbody>
+								<tr>
+									<td><b>Heavyweight</b></td>
+									<td>&gt; 14 st 4 lbs</td>
+									<td>&gt; 90,892 kg</td>
+									<td>&gt; 200 lbs</td>
+								</tr>
+								<tr>
+									<td><b>Cruiserweight</b><br>Jr Heavyweight</td>
+									<td>14 st 4 lbs</td>
+									<td>90,892 kg</td>
+									<td>200 lbs</td>
+								</tr>
+								<tr>
+									<td><b>Light Heavyweight</b></td>
+									<td>12½ st</td>
+									<td>79,378 kg</td>
+									<td>175 lbs</td>
+								</tr>
+								<tr>
+									<td><b>Super Middleweight</b></td>
+									<td>12 st</td>
+									<td>76,203 kg</td>
+									<td>168 lbs</td>
+								</tr>
+								<tr>
+									<td><b>Middleweight</b></td>
+									<td>11 st 6 lbs</td>
+									<td>72,574 kg</td>
+									<td>160 lbs</td>
+								</tr>
+								<tr>
+									<td><b>Super Welterweight</b><br>Jr Middleweight</td>
+									<td>11 st</td>
+									<td>69,85 kg</td>
+									<td>154 lbs</td>
+								</tr>
+								<tr>
+									<td><b>Welterweight</b></td>
+									<td>10½ st</td>
+									<td>66,678 kg</td>
+									<td>147 lbs</td>
+								</tr>
+								<tr>
+									<td><b>Super Lightweight</b><br>Jr Welterweight</td>
+									<td>10 st</td>
+									<td>63,503 kg</td>
+									<td>140 lbs</td>
+								</tr>
+								<tr>
+									<td><b>Lightweight</b></td>
+									<td>9 st 9 lbs</td>
+									<td>61,235 kg</td>
+									<td>135 lbs</td>
+								</tr>
+								<tr>
+									<td><b>Super Featherweight</b><br>Jr Lightweight</td>
+									<td>9 st 4 lbs</td>
+									<td>58,967 kg</td>
+									<td>130 lbs</td>
+								</tr>
+								<tr>
+									<td><b>Featherweight</b></td>
+									<td>9 st</td>
+									<td>57,153 kg</td>
+									<td>126 lbs</td>
+								</tr>
+								<tr>
+									<td><b>Super Bantamweight</b><br>Jr Featherweight</td>
+									<td>8 st 10 lbs</td>
+									<td>55,225 kg</td>
+									<td>122 lbs</td>
+								</tr>
+								<tr>
+									<td><b>Bantamweight</b></td>
+									<td>8 st 6 lbs</td>
+									<td>53,525 kg</td>
+									<td>118 lbs</td>
+								</tr>
+								<tr>
+									<td><b>Super Flyweight</b><br>Jr Bantamweight</td>
+									<td>8 st 3 lbs</td>
+									<td>52,163 kg</td>
+									<td>115 lbs</td>
+								</tr>	
+								<tr>
+									<td><b>Flyweight</b> (All four)</td>
+									<td>8 st</td>
+									<td>50,802 kg</td>
+									<td>112 lbs</td>
+								</tr>
+								<tr>
+									<td><b>Light Flyweight</b><br>Junior Flyweight</td>
+									<td>7st 10 lbs</td>
+									<td>48,988 kg</td>
+									<td>108 lbs</td>
+								</tr>
+								<tr>
+									<td><b>Minimumweight</b> (WBC/WBA/IBF)<br>Mini Flyweight (WBO)</td>
+									<td>7½ st</td>
+									<td>47,627 kg</td>
+									<td>105 lbs</td>
+								</tr>
+							</tbody>
+						</table>					
+						
+					</div>
+					<br>
+					<div>
+						<h4>Competition Rules</h4>	
+						<p>Welterweight 147lbs and below - 8oz gloves</p>
+						<p>Super Welterweight 154lbs and above - 10oz gloves</p>
+						<p>How many rounds are there in a boxing fight? 4, 6, 8, 10, 12 rounds.</p>
+						<p>Men: 3 minutes per round, Women: 2 minutes per round. And a 1-minute interval between rounds.</p>
+						<br>
+						<p>Read more on DAZN: <a href="https://www.dazn.com/en-US/news/boxing/what-are-the-rules-of-boxing-how-does-it-work/19zl38ud4e22s1edomo7u9lm7f">What are the rules of boxing? How does it work?</a></p>
+						<br id="rules-reference">
+					</div>
+
+				</div>
+
+				<div class="space"></div>
+
+				<div class="row">
+					<h4>Reference</h4>
+					<hr>
+					<div>
+						<p>1. <a href="http://www.sportzvision.com/boxing/weight-classes.php">Sportzvision Weight Classes</a></p>
+						<p>2. <a href="https://boxrec.com/wiki/index.php/Weight_divisions">BoxRec Weight Divisions</a></p>
+					</div>
+
+				</div>
+
+			</div>
+		</div>		
+	</section>
+{% endblock %}

@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Recovery
+{% endblock %}
+
+{% block body %}
+	<section id="recovery" class="section clearfix no-view secPadding text-center" data-animation-effect="fadeIn"> 
+		<div class="space"></div> 
+
+		<div class="container">
+			<div class="col-md-12">
+				
+				<div class="row">
+					<h3>Nutrition</h3>
+					<hr>
+
+					<p><a href="https://expertboxing.com/common-sense-boxing-diet">Common Sense Boxing Diet - Expert Boxing</a></p>
+					<img src="https://img2.storyblok.com/1800x743/filters:focal(null):format(webp)/f/115220/2400x990/c6addd2d3b/boxing-diet-plan-for-the-new-year.jpg">
+				</div>
+				<div class="space"></div>
+
+				<div class="row">
+					<h3> Massage </h3>
+					<hr>
+
+					<p><a href="https://jmbodycare.com/how-sports-massage-benefits-a-boxers-performance-2/">How Sports Massage Benefits a Boxer's Performance - JM Body Care</a></p>
+					<img src="https://www.boxingnewsonline.net/wp-content/uploads/sites/17/2019/05/IP-main.jpg">
+				</div>
+				<div class="space"></div>
+
+				<div class="row">
+					<h3> Strech </h3>
+					<hr>
+					
+					<p>VASYL LOMACHENKO SHOWS YOU HOW TO STRETCH FOR A BOXING WORKOUT - Fight Hub TV</p>
+					<iframe src="https://www.youtube.com/embed/w_Q6T9xHt10" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				</div>
+				<div class="space"></div>
+
+				<div class="row">
+					<h3> Sleep </h3>
+					<hr>
+
+					<p><a href="https://boxingscience.co.uk/sleep-tips-for-boxing-champions/">“LEFT, RIGHT, GOODNIGHT” – SLEEP TIPS FOR BOXERS - BoxingScience</a></p>
+					<img src="{{ url_for('static', filename='images/recovery/sleep.png') }}" alt="sleep well">
+				</div>
+
+			</div>
+		</div>		
+	</section>
+{% endblock %}

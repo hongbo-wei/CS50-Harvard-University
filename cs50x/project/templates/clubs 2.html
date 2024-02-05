@@ -1,0 +1,124 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Clubs
+{% endblock %}
+
+{% block body %}
+	<section id="clubs" class="section clearfix no-view secPadding" data-animation-effect="fadeIn"> 
+		<div class="space"></div> 
+
+		<div class="container">
+			<div class="col-md-12">
+
+				<div class="row">
+					<h1 class="title text-center"><a href="https://wildcardboxing.com/">Wild Card Boxing Club</a></h1>
+					<hr>
+
+					<div class="col-md-6">
+						<img src="{{ url_for('static', filename='images/clubs/wild-card-boxing.jpeg') }}">
+					</div>
+
+					<div class="col-md-6">
+
+						<p><b>Head Coach: Freddie Roach</b></p>
+						<p>
+							<b>35+ World Champions</b>
+							<ul>
+								<li>Manny Pacquiao</li>
+								<li>Miguel Cotto</li>
+								<li>Amir Khan</li>
+								<li>James Toney</li>
+								<li>...</li>
+							</ul>
+						</p>
+						<br/>
+
+						<p>
+							<i class="fa fa-map-marker"></i> 
+							<a href="https://www.google.com/maps/search/Wild+Card+Boxing/@34.0915131,-118.3299139,17z?entry=ttu">
+								1123 Vine St # 14, Los Angeles, CA 90038, United States
+							</a>
+						</p>
+						<p><i class="fa fa-phone"></i> <a href="tel:+13234614170">+1 323-461-4170</a></p>
+						<p>Open from Monday to Saturday</p>
+
+					</div>
+				</div>
+				
+				<div class="space"></div> 
+
+				<div class="row">
+					<h1 class="title text-center"><a href="https://www.houseofboxingsd.com/	">House of Boxing</a></h1>
+					<hr>
+
+					<div class="col-md-6">
+						<img src="{{ url_for('static', filename='images/clubs/house-of-boxing.webp') }}">
+					</div>
+
+					<div class="col-md-6">
+
+						<p><b>Head Coach: Eddy Reynoso</b></p>
+						<p>
+							<b>World Champions</b>
+							<ul>
+								<li>Santos Saúl "Canelo" Álvarez</li>
+								<li>Ryan Garcia</li>
+								<li>...</li>
+							</ul>
+						</p>
+						<br/>
+
+						<p>
+							<i class="fa fa-map-marker"></i> 
+							<a href="https://www.google.com/maps/search/House+of+Boxing/@32.6764224,-117.0684234,17z?entry=ttu">
+								2304 Reo Dr, San Diego, CA 92139, United States
+							</a>
+						</p>
+						<p><i class="fa fa-phone"></i> <a href="tel:+16193995898">+1 619-399-5898</a></p>
+						<p>Open from Monday to Saturday</p>
+
+					</div>
+
+				</div>
+
+				<div class="space"></div> 
+
+				<div class="row">
+					<h1 class="title text-center"><a href="#">More to come</a></h1>
+					<hr>
+
+					<div class="col-md-6">
+						<img src="{{ url_for('static', filename='images/goat.jpeg') }}">
+					</div>
+
+					<div class="col-md-6">
+
+						<p><b>Head Coach: ...</b></p>
+						<p>
+							<b>World Champions</b>
+							<ul>
+								<li>...</li>
+								<li>...</li>
+								<li>...</li>
+							</ul>
+						</p>
+						<br/>
+
+						<p>
+							<i class="fa fa-map-marker"></i> 
+							<a href="#">
+								...
+							</a>
+						</p>
+						<p><i class="fa fa-phone"></i> <a href="tel:#">...</a></p>
+						<p>...</p>
+
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</section>
+{% endblock %}

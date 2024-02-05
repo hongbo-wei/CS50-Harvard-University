@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+        <!-- Responsive design -->
+		<meta charset="utf-8">
+		<meta name="description" content="Everything about boxing">
+		<meta name="author" content="hongbo-wei">
+
+		<!-- Mobile Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="{{ url_for('static', filename='images/boxinghub.ico') }}">
+ 
+        <!-- Load css -->
+		<link href="{{ url_for('static', filename='bootstrap/css/bootstrap.css') }}" rel="stylesheet"> 
+		<link href="{{ url_for('static', filename='fonts/font-awesome/css/font-awesome.css') }}" rel="stylesheet"> 
+		<link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet"> 
+
+        <!-- Flask inheritance  -->
+        <title>{% block title %}{% endblock %}</title>
+	</head>
+
+	<body class="no-trans">
+		<!-- scrollToTop --> 
+		<div class="scrollToTop"><i class="icon-up-open-big"></i></div>
+
+		<!-- header start --> 
+		<header class="header fixed clearfix navbar navbar-fixed-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+
+						<!-- header-left start --> 
+						<div class="header-left">
+
+							<!-- logo -->
+							<div class="logo smooth-scroll">
+								<a href="/"><img id="logo" src="{{ url_for('static', filename='images/boxinghub-horizontal.png') }}" alt="boxinghub logo"></a>
+							</div>
+
+						</div>
+						<!-- header-left end -->
+
+					</div>
+					<div class="col-md-8">
+
+						<!-- header-right start --> 
+						<div class="header-right">
+
+							<!-- main-navigation start --> 
+							<div class="main-navigation animated">
+
+								<!-- navbar start --> 
+								<nav class="navbar navbar-default" role="navigation">
+									<div class="container-fluid">
+
+										<!-- Toggle get grouped for better mobile display -->
+										<div class="navbar-header">
+											<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+												<span class="sr-only">Toggle navigation</span>
+												<span class="icon-bar"></span>
+												<span class="icon-bar"></span>
+												<span class="icon-bar"></span>
+											</button>
+										</div>
+
+										<!-- Collect the nav links, forms, and other content for toggling -->
+										<div class="collapse navbar-collapse scrollspy smooth-scroll" id="navbar-collapse-1">
+											<ul class="nav navbar-nav navbar-right">
+												<li class="active"><a href="/">Home</a></li>
+
+												<li class="dropdown">
+													<a>Knowledge</a>
+													<div class="dropdown-content">
+														<a href="techniques">Techniques</a>
+														<a href="recovery">Recovery</a>
+														<a href="rules">Rules</a>
+													</div>
+												</li>
+
+												<li><a href="gears">Gears</a></li>
+												<li><a href="clubs">Clubs</a></li>
+												<li><a href="/#about">About</a></li>
+												<li><a href="#contact">Contact</a></li>
+											</ul>
+										</div>
+
+									</div>
+								</nav>
+								<!-- navbar end -->
+
+							</div>
+							<!-- main-navigation end -->
+
+						</div>
+						<!-- header-right end -->
+
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- header end -->
+
+		<!-- section start -->
+        {% block body %}{% endblock %}
+		<!-- section end -->
+
+		<!-- footer start --> 
+		<footer id="footer">
+
+			<!-- .footer start --> 
+			<div class="footer section">
+				<div class="container">
+					<h1 id="contact" class="title text-center" id="contact">Contact</h1>
+					<!-- <div class="space"></div> -->
+					<div class="row">
+						
+						<div class="footer-content">
+							
+							<div class="widget-content">
+								<p class="contacts"><img src="{{ url_for('static', filename='images/official_logo.jpg') }}"></p>
+								<p class="contacts"><i class="fa fa-map-marker"></i> Worldwide </p>
+								<p class="contacts"><i class="fa fa-envelope"></i> <a href="mailto:hongbowei.bruce@gmail.com">hongbowei.bruce@gmail.com </a></p>
+							</div>
+
+							<ul class="social-links">
+								<li class="linkedin"><a target="_blank" href="https://www.linkedin.com/in/hongbo-wei"><i class="fa fa-linkedin"></i></a></li>
+								<li class="twitter"><a target="_blank" href="https://twitter.com/hongbo_wei"><i class="fa fa-twitter"></i></a></li>
+								<li class="github"><a href="https://github.com/hongbo-wei"><i class="fa fa-github"></i></a></li>
+								<li class="instagram"><a target="_blank" href="https://www.instagram.com/hongbo.thedragon.wei"><i class="fa fa-instagram"></i></a></li>
+								<li class="youtube"><a target="_blank" href="https://www.youtube.com/@hongbo-wei"><i class="fa fa-youtube"></i></a></li> 
+							</ul>
+
+						</div>
+
+						<div id="fun">
+							<table class="vote">
+									<tr>
+										<td>
+											<button id="add_like"><i class="fa fa-thumbs-up blue-thumb"></i></button>
+										</td>
+										<td></td>
+										<td>
+											<button id="add_love"><i class="fa fa-heart red-heart"></i></button>
+										</td>
+									</tr>
+									<tr>
+										<td id="score_like">{{ likes[0]['likes'] }}</td>
+										<td></td>
+										<td id="score_love">{{ loves[0]['loves'] }}</td>
+									</tr>
+							</table>
+						</div>
+
+						<div class="subfooter">
+							<p class="text-center">Copyright © 2023 by <a target="_blank" href="http://github.com/hongbo-wei">Hongbo</a>.</p>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<!-- .footer end -->
+
+		</footer>
+		<!-- footer end -->
+
+		<!-- JavaScript --> 
+		<script type="text/javascript" src="{{ url_for('static', filename='plugins/jquery.min.js') }}"></script>
+		<script type="text/javascript" src="{{ url_for('static', filename='bootstrap/js/bootstrap.min.js') }}"></script>
+		<script type="text/javascript" src="{{ url_for('static', filename='plugins/modernizr.js') }}"></script>
+		<script type="text/javascript" src="{{ url_for('static', filename='plugins/jquery.backstretch.min.js') }}"></script>
+		<script type="text/javascript" src="{{ url_for('static', filename='plugins/jquery.appear.js') }}"></script>
+
+		<!-- Custom Scripts -->
+		<script type="text/javascript" src="{{ url_for('static', filename='js/custom.js') }}"></script>
+
+	</body>
+</html>

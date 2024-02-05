@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+            document.addEventListener("DOMContentLoaded", function() {
+                // If the wrong button clicked, it turns red
+                let wrong = document.querySelectorAll('.wrong');
+                for (let i = 0; i < wrong.length; i++) {
+                    wrong[i].onclick = function() {
+                        wrong[i].style.backgroundColor = 'red';
+                        document.querySelector('#feedback_0').innerHTML = 'Incorrect'
+                    };
+                }
+
+                // If the correct button clicked, it turns green
+                let right = document.querySelector('#right');
+                right.onclick = function() {
+                    right.style.backgroundColor = 'green';
+                    document.querySelector('#feedback_0').innerHTML = 'Correct!'
+                };
+
+                // If user submits correct answer, input box turns green
+                let input = document.querySelector('input');
+                document.querySelector('#check').onclick = function() {
+                    if (input.value.toLowerCase() != 'saul canelo alvarez') {
+                        input.style.backgroundColor = 'red';
+                        document.querySelector('#feedback_1').innerHTML = 'Incorrect'
+                    }
+                    else {
+                        input.style.backgroundColor = 'green';
+                        document.querySelector('#feedback_1').innerHTML = 'Correct!'
+                    }
+
+                }
+            })
+
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <h3>Will Hongbo Wei become a world boxing champion one day?</h3>
+                <button id="right">Yes</button>
+                <button class="wrong">No</button>
+                <button class="wrong">I don't know</button>
+                <p id="feedback_0"></p>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <h3>Which boxing champion whose physical fitness and fighting style is similiar to Hongbo's?</h3>
+                <form>
+                    <input type="text" placeholder="Mexican: his name has 3 words">
+                    <button id="check">Check Answer</button>
+                </form>
+                <p id='feedback_1'></p>
+            </div>
+        </div>
+    </body>
+</html>

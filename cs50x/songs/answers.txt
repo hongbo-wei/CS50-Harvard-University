@@ -1,0 +1,7 @@
+Question 1: If songs.db contains the top 100 songs of one listener from 2018, how would you characterize their audio aura?
+Answer 1: Their audio aura is determined by the highest average of energy, valence, and danceability in descending order.
+
+
+Question 2: Hypothesize about why the way you’ve calculated this aura might not be very representative of the listener. What better ways of calculating this aura would you propose?
+Answer 2: I think a better way to calculate this aura it to use the data of how many times a user have listened to a song and the total duration of playing that song,
+make a query depends on those data in a descending order.

@@ -1,0 +1,251 @@
+{% extends 'base.html' %}
+
+{% block title %}
+	BoxingHub
+{% endblock %}
+
+{% block body %}
+	<!-- banner start --> 
+	<div id="banner" class="banner">
+		<div class="banner-image"></div>
+		<div class="banner-caption">
+			<div class="container">
+				<div class="row">					 
+					<div class="caption-data" style="margin-top: 0px; opacity: 1;" data-animation-effect="fadeIn">
+							<h1>Boxing</h1>
+							<h3 class="padding-top30">Sweet Science</h3>
+							<div class="padding-top60 contact-form">
+								<button class="btn cta-button" onclick="window.location.href='#intro'">Learn and Practice</button>
+							</div>
+						</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- banner end -->
+
+	<!-- intro start -->
+	<section class="hero-caption secPadding" id="intro">
+
+		<div class="container">
+	
+			<div class="row " style="margin-top: 0px;">
+				<div class="col-sm-12">
+					<h2>Welcome to <strong>BoxingHub</strong> - <span>Organization</span></h2>
+					<p>Boxing is called the Sweet Science. Boxing is the redemption of oneself. Boxing lights up the fire deep inside one's heart.</p>
+				</div>
+			</div>
+
+		</div>
+		
+	</section>
+	<!-- intro end -->
+	
+	<!-- section start --> 
+	<section class="section transprant-bg pclear secPadding">
+		<div class="container no-view" data-animation-effect="fadeIn">
+			<h1 class="title text-center">What you can seek here</h1>
+			<div class="space"></div>
+			<div class="row">
+
+				<div class="col-md-4">
+					<div class="media block-list">
+						<div class="media-left">
+							<i class="fa fa-clock-o"></i>
+						</div>
+						<div class="media-body">
+							<h3 class="media-heading">Boxing Techniques</h3>
+							<blockquote>
+								<p>Defence: footwork, blocking, parrying, rolling, slipping, countering, and clinching</p>									
+								<p>Offence: jab, cross, hook, uppercut</p>
+							</blockquote>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="media block-list">
+						<div class="media-left">
+							<i class="fa fa-gear"></i>
+						</div>
+						<div class="media-body">
+							<h3 class="media-heading">Ergonomics for Boxing</h3>
+							<blockquote>
+								<p>Mechanical principal of defence and offence, injury prevention and recovery</p>
+							</blockquote>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="media block-list">
+						<div class="media-left">
+							<i class="fa fa-book"></i>
+						</div>
+						<div class="media-body">
+							<h3 class="media-heading">Learn</h3>
+							<blockquote>
+								<p>Great boxing learning material, text, images, videos. And practice what you learn.</p>
+								
+							</blockquote>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="row">
+
+				<div class="col-md-4">
+					<div class="media block-list">
+						<div class="media-left">
+							<i class="fa fa-star"></i>
+						</div>
+						<div class="media-body">
+							<h3 class="media-heading">Star what you like</h3>
+							<blockquote>
+								<p>If you like this website, please do not forget to bookmark it.</p>								
+							</blockquote>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="media block-list">
+						<div class="media-left">
+							<i class="fa fa-arrow-up"></i>
+						</div>
+						<div class="media-body">
+							<h3 class="media-heading">Level up</h3>
+							<blockquote>
+								<p>Hard work pays off! After doing serious study and long-term practice. You fight much better.</p>								
+							</blockquote>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="media block-list">
+						<div class="media-left">
+							<i class="fa fa-trophy"></i>
+						</div>
+						<div class="media-body">
+							<h3 class="media-heading">Fight well</h3>
+							<blockquote>
+								<p>Win the true battle against yourself. A loss is temporary, so keep moving forward and earn your winning.</p>								
+							</blockquote>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>			  
+	</section>
+	<!-- section end -->
+
+	<!-- section start --> 
+	<section id="about" class="section clearfix no-view secPadding" data-animation-effect="fadeIn">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1 class="title text-center">About <span>Organization</span></h1>
+					<p class="lead text-center">BoxingHub is dedicated to speading boxing knowledge and developing boxing culture.</p>
+					<div class="space"></div>
+					<div class="row">
+						
+						<div class="col-md-6">
+							<img src="{{ url_for('static', filename='images/boxing-greats.jpg') }}" alt="boxing-greats">
+							<div class="space"></div>
+						</div>
+
+						<div class="col-md-6">
+							<b> Respect boxing greats! Learn from them! </b>
+							<ul class="list-unstyled">
+								<li><i class="fa fa-arrow-circle-right pr-10 colored"></i> Muhammad Ali </li>
+								<li><i class="fa fa-arrow-circle-right pr-10 colored"></i> Ray Robinson </li>
+								<li><i class="fa fa-arrow-circle-right pr-10 colored"></i> Roberto Duran </li>
+								<li><i class="fa fa-arrow-circle-right pr-10 colored"></i> Manny Pacquiao </li>
+								<li><i class="fa fa-arrow-circle-right pr-10 colored"></i> Sugar ray leonard </li>
+								<li><i class="fa fa-arrow-circle-right pr-10 colored"></i> Marvelous Marvin Hagler </li>
+								<li><i class="fa fa-arrow-circle-right pr-10 colored"></i> Floyd Mayweather Jr. </li>
+								<li><i class="fa fa-arrow-circle-right pr-10 colored"></i> Oscar De La Hoya </li>
+								<li><i class="fa fa-arrow-circle-right pr-10 colored"></i> Terence Crawford </li>
+								<li><i class="fa fa-arrow-circle-right pr-10 colored"></i> Saul Alvarez </li>
+								<li><i class="fa fa-arrow-circle-right pr-10 colored"></i> Julio Cesar Chavez </li>
+								<li><i class="fa fa-arrow-circle-right pr-10 colored"></i> Roy Jones Jr. </li>
+								<li><i class="fa fa-arrow-circle-right pr-10 colored"></i> Naseem Hamed </li>
+								<li><i class="fa fa-arrow-circle-right pr-10 colored"></i> Mike Tyson </li>
+								<li><i class="fa fa-arrow-circle-right pr-10 colored"></i> George Foreman </li>
+								<li><i class="fa fa-arrow-circle-right pr-10 colored"></i> Evander Holyfield </li>
+								<li><i class="fa fa-arrow-circle-right pr-10 colored"></i> ... </li>
+							</ul>
+						</div>
+
+					</div>
+					<div class="space"></div>
+
+					<div class="row">
+
+						<div class="col-md-6">
+							<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab" id="headingOne">
+										<h4 class="panel-title">
+											<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+												Boxing Qualities
+											</a>
+										</h4>
+									</div>
+									<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+										<div class="panel-body">
+											<p>Build a solid foundation, and then focus on the upper layer.</p>
+
+											<ul class="list-unstyled">
+												<li><i class="fa fa-arrow-circle-right pr-10 colored"></i> Boxing IQ </li>
+												<li><i class="fa fa-arrow-circle-right pr-10 colored"></i> Reflex </li>
+												<li><i class="fa fa-arrow-circle-right pr-10 colored"></i> Speed </li>
+												<li><i class="fa fa-arrow-circle-right pr-10 colored"></i> Endurance </li>
+												<li><i class="fa fa-arrow-circle-right pr-10 colored"></i> Strength </li>
+											</ul>
+
+										</div>
+									</div>
+								</div>
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab" id="headingTwo">
+										<h4 class="panel-title">
+											<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+												How so?
+											</a>
+										</h4>
+									</div>
+									<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+										<div class="panel-body">
+											<p>Boxing is divided into different weight classes. And fighters normally won't have the strength that belongs to much higher weight.</p>
+											
+											<ul class="list-unstyled">
+												<li><i class="fa fa-arrow-circle-right pr-10 colored"></i> Strength matters, but it won't exceed too much for a certian weight. </li>
+												<li><i class="fa fa-arrow-circle-right pr-10 colored"></i> Endurance allows boxers to fight in many rounds, not burn out early. </li>
+												<li><i class="fa fa-arrow-circle-right pr-10 colored"></i> Speed determines explosive power, and help timing. </li>
+												<li><i class="fa fa-arrow-circle-right pr-10 colored"></i> Reflex is the ability to react to momentory situations. </li>
+												<li><i class="fa fa-arrow-circle-right pr-10 colored"></i> With above 4 quliaties, higher boxing IQ always prevails. </li>
+											</ul>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-6">
+							<p><img src="{{ url_for('static', filename='images/boxing-pyramid.png') }}"></p>
+						</div>
+
+					</div>
+					<div class="space"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- section end -->
+{% endblock %}

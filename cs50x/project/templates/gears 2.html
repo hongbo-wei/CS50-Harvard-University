@@ -1,0 +1,155 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Gears
+{% endblock %}
+
+{% block body %}
+	<section id="gears" class="section clearfix no-view secPadding text-center" data-animation-effect="fadeIn"> 
+		<div class="space"></div> 
+
+		<div class="container">
+			<div class="col-md-12">
+
+				<div class="row">
+					<h3>Gloves</h3>
+					<hr>
+					
+					<div class="row">
+						<h4>Fight Gloves</h4>
+						<div class="col-sm-4">
+							<img src="{{ url_for('static', filename='images/gloves/fight-gloves.jpg') }}">
+						</div>
+						<div class="col-sm-4">
+							<div class="vertical-center">
+								<p>
+									Most fight gloves such as Cleto Reyes are stuffed with horse hair, which provides better power delivery.
+									Buy some fight gloves like Winning use speciail foam providing better hands protection.
+								</p>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<img src="{{ url_for('static', filename='images/gloves/pacquiao-punching.jpg') }}">
+						</div>
+					</div>
+					<div class="space"></div> 
+					
+					<div class="row">
+						<h4>Sparring Gloves</h4>
+						<div class="col-sm-4">
+							<img src="{{ url_for('static', filename='images/gloves/sparring-gloves.jpg') }}">
+						</div>
+						<div class="col-sm-4">
+							<div class="vertical-center">
+								<p>
+									Sparring Gloves range from 14oz to 20oz. Most are made with durable foam padding.
+								</p>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<img src="{{ url_for('static', filename='images/gloves/winning-white.jpg') }}">
+						</div>
+					</div>
+					<div class="space"></div> 
+
+					<div class="row">
+						<h4>Bag Gloves</h4>
+						<div class="col-sm-4">
+							<img src="{{ url_for('static', filename='images/gloves/power-punch-gloves.jpg') }}">
+						</div>
+						<div class="col-sm-4">
+							<p>
+								There are a few types of bag loves:
+								<ul>
+									<li>
+										Training gloves: mang boxer use traing gloves to hit bags and mitts, such as Winning, Rival range from 8oz to 12oz.
+									</li>
+									<li>
+										Bag golves with high-density padding: these are specially designed for boxers to throw heavy punches on a heavy bag. And they shall never be used for sparring.
+									</li>
+									<li>
+										Old school bag gloves: these are generally thin and lightweight. A boxer can improve rhythm, speed, and accuracy with them.
+									</li>
+								</ul>
+							</p>
+						</div>
+						<div class="col-sm-4">
+							<img src="{{ url_for('static', filename='images/gloves/old-school-gloves.jpg') }}">
+						</div>
+					</div>
+					<div class="space"></div>
+
+				</div>
+				
+
+				<div class="row">
+					<h3> Protection </h3>
+					<hr>
+
+					<div class="row">							
+						<div class="col-md-6">
+							<h4>Handwraps</h4>
+							<p>
+								Handwraps are used to make fists solid, support wraist, and make fists to fit in gloves better.
+							</p>
+							<img src="{{ url_for('static', filename='images/protection/handwraps.jpg') }}">
+						</div>
+
+						<div class="col-md-6">
+							<h4>Mouthguard</h4>
+							<p>
+								The best customized	 mouthguard can be made using one's tooth model. A boxer should go to a dentist to get that first.
+							</p>
+							<img src="{{ url_for('static', filename='images/protection/mouthguard.jpg') }}">
+						</div>
+					</div>
+					<div class="space"></div>
+
+					<div class="row">
+						<div class="col-md-6">
+							<h4>Headgear</h4>
+							<p>
+								A headgear is mostly used in sparring to prevent a boxer from getting a facial cut, and maybe getting knocked down.
+							</p>
+							<img src="{{ url_for('static', filename='images/protection/headgear.jpg') }}">
+						</div>
+						<div class="col-md-6">
+							<h4>No-foul Protector</h4>
+							<p>
+								To protect the weakest part of a man, should be worn for sparring and formal boxing matches.
+							</p>
+							<img src="{{ url_for('static', filename='images/protection/no-foul-protector.jpg') }}">
+						</div>
+					</div>
+					<div class="space"></div>
+
+				</div>
+
+				<div class="row">
+					<h3> Footwear </h3>
+					<hr>
+
+					<div class="col-md-6">
+						<img src="{{ url_for('static', filename='images/protection/footwear.jpeg') }}">
+					</div>
+
+					<div class="col-md-6">
+						<h4>Brands</h4>
+						<br>
+						
+						<p>Adidas</p>
+						<p>Asics</p>
+						<p>Di Nardo</p>
+						<p>Everlast</p>
+						<p>Nike</p>
+						<p>Mizuno</p>
+						<p>Reebok</p>
+						<p>...</p>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</section>
+{% endblock %}

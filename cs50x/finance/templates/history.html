@@ -1,0 +1,30 @@
+{% extends "index.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Symbol</th>
+                <th>Shares</th>
+                <th>Price</th>
+                <th>Bought/Sold</th>
+                <th>Transacted</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for history in histories %}
+                <tr>
+                    <td>{{ history.symbol }}</td>
+                    <td>{{ history.shares }}</td>
+                    <td>{{ history.price }}</td>
+                    <td>{{ history.bought_or_sold }}</td>
+                    <td>{{ history.time }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
