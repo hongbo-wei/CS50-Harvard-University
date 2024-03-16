@@ -1,6 +1,6 @@
 # CS50
-[Introduction to Computer Science | Harvard University](https://cs50.harvard.edu/college)https://cs50.harvard.edu/college
-Taught by [David J. Malan](https://github.com/dmalan)https://github.com/dmalan
+[Introduction to Computer Science | Harvard University](https://cs50.harvard.edu/college)
+Taught by [David J. Malan](https://github.com/dmalan)
 - Week 0 Scratch
 - Week 1 C
 - Week 2 Arrays
